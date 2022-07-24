@@ -1,0 +1,32 @@
+@import '_nullStyle.scss'; //обнуление стилей
+@import '_fonts.scss'; //шрифты
+
+@import '_header.scss';
+
+body {
+  font-family: 'segoe Ui';
+}
+
+.wraper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+._container {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 10px;
+}
+
+.main {
+  flex: 1 1 auto;
+  &__container {
+  }
+}
+.footer {
+  &__container {
+    border: 1px solid rgb(27, 235, 89);
+  }
+}
