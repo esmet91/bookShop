@@ -14,7 +14,7 @@ body {
   width: 100%;
   overflow: hidden;
 }
-._container {
+.container {
   margin: 0 auto;
   max-width: 1024px;
   padding: 0 10px;
@@ -22,11 +22,18 @@ body {
 
 .main {
   flex: 1 1 auto;
+
   &__container {
+    padding: 15px 10px 25px 10px;
   }
 }
 .footer {
   &__container {
     border: 1px solid rgb(27, 235, 89);
   }
+}
+
+.active-link {
+  background: linear-gradient(to top, #79b260, #92d774);
+  color: #fff;
 }

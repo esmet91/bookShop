@@ -11,7 +11,7 @@
       <header class="header">
         <div class="header__container">
           <div class="header__top top-header">
-            <ul class="top-header__list _container">
+            <ul class="top-header__list container">
               <li class="top-header__link">Sign in</li>
               <li class="top-header__link">My Account</li>
               <li class="top-header__link">Order Status</li>
@@ -19,15 +19,27 @@
             </ul>
           </div>
           <div class="header__body body-header">
-            <div class="body-header__content _container">
+            <div class="body-header__content container">
               <div class="body-header__logo">
                 <img src="./src/images/logo.png" alt="" />
               </div>
-              <div class="body-header__search search-header">
+              <form action="#" class="body-header__search search-header">
                 <input type="text" class="search-header__input" />
 
-                <button class="search-header__button">Search</button>
-              </div>
+                <button class="search-header__button">
+                  <svg
+                    height="25px"
+                    style="enable-background: new 0 0 512 512"
+                    viewBox="0 0 512 512"
+                    width="25px"
+                  >
+                    <path
+                      d="M344.5,298c15-23.6,23.8-51.6,23.8-81.7c0-84.1-68.1-152.3-152.1-152.3C132.1,64,64,132.2,64,216.3  c0,84.1,68.1,152.3,152.1,152.3c30.5,0,58.9-9,82.7-24.4l6.9-4.8L414.3,448l33.7-34.3L339.5,305.1L344.5,298z M301.4,131.2  c22.7,22.7,35.2,52.9,35.2,85c0,32.1-12.5,62.3-35.2,85c-22.7,22.7-52.9,35.2-85,35.2c-32.1,0-62.3-12.5-85-35.2  c-22.7-22.7-35.2-52.9-35.2-85c0-32.1,12.5-62.3,35.2-85c22.7-22.7,52.9-35.2,85-35.2C248.5,96,278.7,108.5,301.4,131.2z"
+                    />
+                  </svg>
+                  Search
+                </button>
+              </form>
               <div class="body-header__cart cart-header">
                 <div class="cart-header__top top-cart">
                   <div class="top-cart__info">
@@ -56,14 +68,56 @@
               </div>
             </div>
           </div>
-          <nav class="header__nav _container"></nav>
+          <nav class="header__nav nav-header">
+            <ul class="nav-header__list container">
+              <li class="nav-header__link active-link">Computers</li>
+              <li class="nav-header__link">Cooking</li>
+              <li class="nav-header__link">Education</li>
+              <li class="nav-header__link active-link">Fiction</li>
+              <li class="nav-header__link">Health</li>
+              <li class="nav-header__link">Mathematics</li>
+              <li class="nav-header__link">Medical</li>
+              <li class="nav-header__link">Reference</li>
+              <li class="nav-header__link">Science</li>
+            </ul>
+          </nav>
         </div>
       </header>
       <section class="main">
-        <div class="main__container _container">main</div>
+        <div class="main__container container">
+          <div class="main__banner banner-main">
+            <div class="banner-main__slider slider-main">
+              <div class="slider-main__wrapper">
+                <div class="slider-main__item item-slider">
+                  <div class="item-slider__bg-image">
+                    <img src="./src/images/slider/slide1.jpg" alt=""/>
+                  </div>
+                  <div class="item-slider__images">
+                    <div class="item-slider__image1">
+                      <img src="./src/images/slider/slide1-book.jpg" alt=""/>
+                    </div>
+                    <div class="item-slider__image2">
+                      <img src="./src/images/slider/slide1-disk.png" alt=""/>
+                    </div>
+                  </div>
+                  <div class="item-slider__text">
+                    <h1 class="item-slider__title">A Wanted Man</div>
+                    <p class="item-slider__subtitle">(Jack Reacher #17)</p>
+                    <p class="item-slider__text">By Lee Child</p>
+                  </div>
+                  <div class="slider-main__arrows arrows-slider">
+                    <div class="arrows-slider__prew"></div>
+                    <div class="arrows-slider__next"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="banner-main__sale-block"></div>
+          </div>
+        </div>
       </section>
       <footer class="footer">
-        <div class="footer__container _container">footer</div>
+        <div class="footer__container container">footer</div>
       </footer>
     </div>
   </body>
