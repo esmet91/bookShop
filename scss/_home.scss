@@ -1,0 +1,164 @@
+.main {
+  // .main__container
+
+  &__container {
+  }
+
+  // .main__banner
+
+  &__banner {
+  }
+}
+
+.banner-main {
+  display: flex;
+  column-gap: 13px;
+  // .banner-main__slider
+
+  &__slider {
+    flex: 1 1 714px;
+    min-height: 305px;
+    cursor: pointer;
+  }
+
+  // .banner-main__sale-block
+
+  &__sale-block {
+    border: 1px solid rgb(228, 8, 8);
+    width: 270px;
+    height: 305px;
+  }
+}
+.slider-main {
+  // .slider-main__wrapper
+
+  &__wrapper {
+  }
+
+  // .slider-main__item
+
+  &__item {
+  }
+
+  // .slider-main__arrows
+
+  &__arrows {
+  }
+}
+.item-slider {
+  position: relative;
+  display: flex;
+  padding: 41px 60px 35px;
+  align-items: center;
+  // .item-slider__bg-image
+
+  &__bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .item-slider__images
+
+  &__images {
+    position: relative;
+  }
+
+  // .item-slider__image1
+
+  &__image1 {
+    width: 150px;
+    height: 230px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .item-slider__image2
+
+  &__image2 {
+    position: absolute;
+    width: 143px;
+    height: 108px;
+    bottom: 10px;
+    left: 104px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .item-slider__text
+
+  &__text {
+    margin-left: 95px;
+  }
+
+  // .item-slider__title
+
+  &__title {
+    font-size: 47px;
+    font-weight: 700;
+    line-height: 1.12;
+    color: #fff;
+    text-align: center;
+  }
+
+  // .item-slider__subtitle
+
+  &__subtitle {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    margin: 0px 0px 9px 0px;
+  }
+  //.item-slider__description
+  &__description {
+    color: #fff;
+    font-weight: 700;
+    font-size: 21px;
+    text-align: center;
+    line-height: 1.33;
+  }
+}
+
+.arrows-slider {
+  // .arrows-slider__arrow
+
+  &__arrow {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.46);
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%) rotate(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    img {
+      width: 16px;
+      height: 24px;
+      margin-left: 3px;
+    }
+  }
+}
+.-prev {
+  left: 12px;
+}
+.-next {
+  right: 12px;
+  transform: translate(0, -50%) rotate(0);
+}

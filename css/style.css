@@ -314,6 +314,120 @@ h6 {
   box-shadow: inset 1px 1px 7px #213621;
 }
 
+.banner-main {
+  display: flex;
+  -moz-column-gap: 13px;
+       column-gap: 13px;
+}
+.banner-main__slider {
+  flex: 1 1 714px;
+  min-height: 305px;
+  cursor: pointer;
+}
+.banner-main__sale-block {
+  border: 1px solid rgb(228, 8, 8);
+  width: 270px;
+  height: 305px;
+}
+
+.item-slider {
+  position: relative;
+  display: flex;
+  padding: 41px 60px 35px;
+  align-items: center;
+}
+.item-slider__bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.item-slider__bg-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.item-slider__images {
+  position: relative;
+}
+.item-slider__image1 {
+  width: 150px;
+  height: 230px;
+}
+.item-slider__image1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.item-slider__image2 {
+  position: absolute;
+  width: 143px;
+  height: 108px;
+  bottom: 10px;
+  left: 104px;
+}
+.item-slider__image2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.item-slider__text {
+  margin-left: 95px;
+}
+.item-slider__title {
+  font-size: 47px;
+  font-weight: 700;
+  line-height: 1.12;
+  color: #fff;
+  text-align: center;
+}
+.item-slider__subtitle {
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  margin: 0px 0px 9px 0px;
+}
+.item-slider__description {
+  color: #fff;
+  font-weight: 700;
+  font-size: 21px;
+  text-align: center;
+  line-height: 1.33;
+}
+
+.arrows-slider__arrow {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.46);
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%) rotate(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.arrows-slider__arrow img {
+  width: 16px;
+  height: 24px;
+  margin-left: 3px;
+}
+
+.-prev {
+  left: 12px;
+}
+
+.-next {
+  right: 12px;
+  transform: translate(0, -50%) rotate(0);
+}
+
 body {
   font-family: "segoe Ui";
 }
