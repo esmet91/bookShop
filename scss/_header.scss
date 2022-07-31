@@ -1,8 +1,15 @@
 .header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
   font-size: 23px;
+
+  // .header__body
   &__body {
     border-bottom: 1px solid #cecece;
   }
+
+  // .header__nav
   &__nav {
     border-bottom: 1px solid #cecece;
   }
@@ -216,15 +223,19 @@
     }
   }
 }
+
 /*==========header NAV===============*/
 
 .nav-header {
+  background: #fff;
+
   // .nav-header__list
   &__list {
     display: flex;
     flex-wrap: wrap;
     gap: 5px 0px;
   }
+
   // .nav-header__link
   &__link {
     display: flex;

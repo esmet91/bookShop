@@ -105,6 +105,9 @@ h6 {
 }
 /*---------------------------------------------------------*/
 .header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
   font-size: 23px;
 }
 .header__body {
@@ -294,6 +297,9 @@ h6 {
 }
 
 /*==========header NAV===============*/
+.nav-header {
+  background: #fff;
+}
 .nav-header__list {
   display: flex;
   flex-wrap: wrap;
@@ -312,6 +318,10 @@ h6 {
 }
 .nav-header__link:active {
   box-shadow: inset 1px 1px 7px #213621;
+}
+
+.main {
+  margin-top: 182px;
 }
 
 .banner-main {
@@ -427,7 +437,7 @@ h6 {
   transform: translate(0, -50%) rotate(0);
 }
 
-/*sale block*/
+/*======================sale block========================*/
 .sale-block__container {
   background: radial-gradient(circle, rgb(162, 162, 162) 0%, rgb(85, 85, 85) 100%);
   color: #fff;
@@ -535,6 +545,92 @@ h6 {
   text-decoration: none;
 }
 
+.footer__top {
+  padding: 20px 0px;
+  background: url("../src/images/footer-bgTop.jpg") 0 0/cover no-repeat;
+}
+.footer__bottom {
+  padding: 25px 0px 15px;
+  background: url("../src/images/footer-bgBottom.png") 0 0/cover no-repeat;
+}
+
+.top-footer__body {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.top-footer__item {
+  padding: 0 10px;
+}
+.top-footer__title {
+  font-size: 20px;
+  color: #ddd;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.top-footer__list li {
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(221, 221, 221, 0.7);
+  border-bottom: 1px solid rgba(221, 221, 221, 0.3);
+  cursor: pointer;
+}
+.top-footer__list li:hover {
+  transform: scale(1.05);
+}
+.top-footer__list li:last-child {
+  border-bottom: none;
+}
+
+.bottom-footer {
+  position: relative;
+}
+.bottom-footer__text {
+  text-align: center;
+  color: #ddd;
+  font-size: 20px;
+  font-weight: 300;
+}
+.bottom-footer__links {
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+.bottom-footer__links::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background-color: #ddd;
+  opacity: 0.2;
+  transform: translate(0, 15px);
+}
+.bottom-footer__links-list {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.bottom-footer__links-list li {
+  width: 43px;
+  height: 25px;
+  cursor: pointer;
+}
+.bottom-footer__links-list li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bottom-footer__license {
+  text-align: center;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+}
+
 body {
   font-family: "segoe Ui";
 }
@@ -560,10 +656,6 @@ body {
   padding: 15px 10px 25px 10px;
 }
 
-.footer__container {
-  border: 1px solid rgb(27, 235, 89);
-}
-
 .active-link {
   background: linear-gradient(to top, #79b260, #92d774);
   color: #fff;
@@ -579,7 +671,7 @@ body {
 /*================Categories===========================*/
 .categories-menu__container {
   border: solid 1px #d8dce0;
-  padding: 11px 0px 52px;
+  padding: 11px 0px 76px;
   min-width: 200px;
 }
 .categories-menu__header {
@@ -587,7 +679,7 @@ body {
   font-weight: 300;
   color: #6b6969;
   padding: 0 20px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .categories-menu__category {
   font-size: 17px;
@@ -640,6 +732,12 @@ body {
   flex-direction: column;
   align-items: center;
   width: 110px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.products__item:hover {
+  transform: scale(1.03);
+  transition: transform 0.2s ease-in-out;
 }
 
 .item-product {
@@ -693,3 +791,32 @@ body {
 }
 
 /*================/products==============================*/
+/*=================pagination=============================*/
+.pagination {
+  display: flex;
+  justify-content: end;
+}
+.pagination__list {
+  display: flex;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  margin: 0 20px;
+}
+.pagination__list li {
+  font-family: "Helvetica";
+  color: #646464;
+  font-size: 16px;
+  padding: 5px 7px 3px;
+  cursor: pointer;
+}
+.pagination__list li:hover {
+  outline: 1px solid #f2f3f3;
+  border-bottom: 4px solid #cdf7a0;
+}
+
+.current-page {
+  border: 1px solid #d8dce0;
+  border-bottom: 4px solid #95bd6b;
+}
+
+/*=================/pagination=============================*/

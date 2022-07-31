@@ -3,6 +3,7 @@
 
 @import '_header.scss';
 @import '_home.scss';
+@import '_footer.scss';
 
 body {
   font-family: 'segoe Ui';
@@ -28,12 +29,6 @@ body {
     padding: 15px 10px 25px 10px;
   }
 }
-.footer {
-  &__container {
-    border: 1px solid rgb(27, 235, 89);
-  }
-}
-
 .active-link {
   background: linear-gradient(to top, #79b260, #92d774);
   color: #fff;
@@ -50,16 +45,17 @@ body {
   // .categories-menu__container
   &__container {
     border: solid 1px #d8dce0;
-    padding: 11px 0px 52px;
+    padding: 11px 0px 76px;
     min-width: 200px;
   }
+
   // .categories-menu__header
   &__header {
     font-size: 24px;
     font-weight: 300;
     color: #6b6969;
     padding: 0 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   // .categories-menu__category
@@ -115,17 +111,24 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 26px 50px;
-  // .products__item
 
+  // .products__item
   &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 110px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.03);
+      transition: transform 0.2s ease-in-out;
+    }
   }
 }
 .item-product {
   position: relative;
+
   // .item-product__sale
   &__sale {
     position: absolute;
@@ -148,8 +151,8 @@ body {
       font-size: 13px;
     }
   }
-  // .item-product__image
 
+  // .item-product__image
   &__image {
     padding: 5px;
     background: #fff;
@@ -164,7 +167,6 @@ body {
   }
 
   // .item-product__title
-
   &__title {
     text-align: center;
     font-size: 15px;
@@ -173,7 +175,6 @@ body {
   }
 
   // .item-product__price
-
   &__price {
     font-family: 'Helvetica';
     text-align: center;
@@ -182,3 +183,32 @@ body {
   }
 }
 /*================/products==============================*/
+
+/*=================pagination=============================*/
+.pagination {
+  display: flex;
+  justify-content: end;
+
+  // .pagination__list
+  &__list {
+    display: flex;
+    column-gap: 4px;
+    margin: 0 20px;
+    li {
+      font-family: 'Helvetica';
+      color: #646464;
+      font-size: 16px;
+      padding: 5px 7px 3px;
+      cursor: pointer;
+      &:hover {
+        outline: 1px solid #f2f3f3;
+        border-bottom: 4px solid #cdf7a0;
+      }
+    }
+  }
+}
+.current-page {
+  border: 1px solid #d8dce0;
+  border-bottom: 4px solid #95bd6b;
+}
+/*=================/pagination=============================*/
