@@ -202,13 +202,6 @@
     font-size: 19px;
     font-weight: 600;
     padding: 3px 19px;
-    &:hover {
-      background: linear-gradient(to top, #6b9e55, #85c46a);
-      color: #fff;
-    }
-    &:active {
-      box-shadow: inset 1px 1px 7px #213621;
-    }
   }
 }
 
