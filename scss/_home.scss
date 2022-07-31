@@ -218,19 +218,26 @@
   display: flex;
   column-gap: 10px;
 
-  // .books-page__tabs
-  &__tabs {
+  // .books-page__book
+  &__book {
     flex: 1 1 auto;
   }
 }
 
-.tabs-page {
-  // .tabs-page__nav
+.book-page {
+  // .book-page__title
+  &__title {
+    padding: 18px 26px 0;
+    font-size: 24px;
+    font-weight: 300;
+    color: #464646;
+  }
+  // .book-page__nav
   &__nav {
     display: flex;
   }
 
-  // .tabs-page__tab-title
+  // .book-page__tab-title
   &__tab-title {
     font-family: 'Helvetica';
     font-size: 17px;
@@ -245,7 +252,7 @@
     }
   }
 
-  // .tabs-page__content
+  // .book-page__content
   &__content {
     margin-top: -1px;
     border: solid 1px #d8dce0;
